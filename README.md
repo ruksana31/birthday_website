@@ -14,6 +14,8 @@ A personalized birthday surprise website featuring:
 - HTML5
 - CSS3
 - JavaScript
+## Preview
 
+![Preview](preview.png)
 ## Live Demo
 https://ruksana31.github.io/birthday_website/
