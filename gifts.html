@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For you❤️</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="gifts-body">
+    <section id="gifts">
+      <div class="sparkles"></div>
+      <div class="gifts-container">
+        <h1>Open your gifts!</h1>
+        <button id="open-gifts-button1">
+          <img src="./gif/gift_open.gif" alt="Gift Opening" class="gift-gif" />
+        </button>
+        <button id="open-gifts-button2">
+          <img src="./gif/gift_open.gif" alt="Gift Opening" class="gift-gif" />
+        </button>
+        <button id="open-gifts-button3">
+          <img src="./gif/gift_open.gif" alt="Gift Opening" class="gift-gif" />
+        </button>
+      </div>
+      <div class="letter-scene">
+        <img
+          src="./Images/letter-background.png"
+          class="letter-background"
+          alt="letter-bg"
+        />
+        <div class="letter-container-wrapper">
+          <img
+            src="./Images/letter-theme.png"
+            alt="letter-theme"
+            class="letter-paper"
+          />
+          <div class="letter-text">
+            <p id="typing-text"></p>
+          </div>
+        </div>
+        <button class="back-button">back</button>
+      </div>
+      <div class="hug-scene" style="display: none">
+        <div class="hug-card">
+          <h2>Sending you the biggest, warmest...</h2>
+          <h1>VIRTUAL HUG! 🤗❤️</h1>
+          <img src="./gif/cute_hug.gif" alt="Cute Hug Gif" class="hug-gif" />
+          <h2>Consider yourself tightly squeezed, jaan! 💕</h2>
+          <button class="close-hug-button">Aww, Thank You! </button>
+        </div>
+      </div>
+      <div class="voice-scene" style="display: none">
+        <div class="voice-card">
+          <h2>A special message just for you...</h2>
+          <h1>LISTEN CLOSELY </h1>
+
+          <audio id="love-voice-note" src="./Audio/VoiceNote.mp3"></audio>
+
+          <div class="custom-audio-player">
+            <button id="custom-play-btn" class="play-btn">
+              <span class="play-icon">▶</span>
+            </button>
+            <div class="player-track-wrapper">
+              <div class="time-display" id="audio-time">0:00 / 0:00</div>
+              <div class="progress-bar-container" id="progress-container">
+                <div class="progress-fill" id="progress-fill"></div>
+              </div>
+            </div>
+          </div>
+
+          <p>Click play to hear what's inside my heart. 💕</p>
+          <button class="close-voice-button">Close Box </button>
+        </div>
+      </div>
+      <div class="fade-screen"></div>
+      <button id="final-question-trigger" class="final-quest-btn" style="display: none;">
+        Click Me Jaan!
+      </button>
+
+      <div id="proposal-popup" class="proposal-overlay" style="display: none;">
+        <div class="proposal-card">
+          <img src="./Images/doubt.gif" alt="Cute Bunny" class="proposal-img" />
+          <h1>Do you love me? 🥺👉👈</h1>
+          <div class="proposal-actions">
+            <button id="love-yes-btn">Yes</button>
+            <button id="love-no-btn">No</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="crying-cat-popup" class="proposal-overlay" style="display: none;">
+        <div class="proposal-card crying-card">
+          <div class="crying-emoji"><img src="./gif/screamCat.gif"></div>
+          <h1>How dare you click that?!</h1>
+          <p>You can't escape my love, choose wisely! 😂👊</p>
+          <button id="try-again-btn">Try Again </button>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

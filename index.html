@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For you❤️</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="lock-screen-body">
+    <section id="lock-screen">
+      <div class="container">
+        <div class="left">
+          <img
+            src="./images/screen_poster.png"
+            width="300"
+            height="450"
+            alt="ScreenPoster"
+          />
+        </div>
+        <div class="right">
+          <h1>Enter Secret Code</h1>
+          <div class="passcode">
+            <span class="heart">♡</span>
+            <span class="heart">♡</span>
+            <span class="heart">♡</span>
+            <span class="heart">♡</span>
+          </div>
+          <div class="keypad">
+            <button data-value="1">1</button>
+            <button data-value="2">2</button>
+            <button data-value="3">3</button>
+            <button data-value="4">4</button>
+            <button data-value="5">5</button>
+            <button data-value="6">6</button>
+            <button data-value="7">7</button>
+            <button data-value="8">8</button>
+            <button data-value="9">9</button>
+            <button id="delete">X</button>
+            <button data-value="0">0</button>
+            <button data-value="#">#</button>
+          </div>
+          <button id="enter" onclick="checkPassword()">Enter</button>
+          <span id="hint">HINT:My Fav person b'day</span>
+        </div>
+      </div>
+      <p id="error"></p>
+      <div id="overlay"><h1>Access Granted Jaanuuu...</h1></div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
