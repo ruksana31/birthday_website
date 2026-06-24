@@ -458,9 +458,18 @@ function updateCarousel() {
             lightsString.classList.toggle("lights-off");
             if (lightsString.classList.contains("lights-off")) {
                 lightsToggle.textContent = " Lights: ON";
+                memorybody.style.backgroundImage =
+                    "linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('./images/night_bg.png')";
+                memorybody.style.backgroundSize = "cover";
+                memorybody.style.backgroundPosition = "center";
+                memorybody.style.backgroundRepeat = "no-repeat";
+                memorybody.style.backgroundAttachment = "fixed";
+                document.querySelector(".star").classList.add("active");
                 lightsToggle.classList.remove("active");
             } else {
                 lightsToggle.textContent = " Lights: OFF";
+                memorybody.style.background = "radial-gradient(circle, #fff3f6 0%, #ffd1dc 100%)"
+                document.querySelector(".star").classList.remove("active");
                 lightsToggle.classList.add("active");
             }
         });
