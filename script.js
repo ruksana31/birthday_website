@@ -459,7 +459,7 @@ function updateCarousel() {
             if (lightsString.classList.contains("lights-off")) {
                 lightsToggle.textContent = " Lights: ON";
                 memorybody.style.backgroundImage =
-                    "linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('./images/night_bg.png')";
+                    "linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('./Images/night_bg.png')";
                 memorybody.style.backgroundSize = "cover";
                 memorybody.style.backgroundPosition = "center";
                 memorybody.style.backgroundRepeat = "no-repeat";
