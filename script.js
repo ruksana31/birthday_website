@@ -391,7 +391,7 @@ if (document.querySelector(".memory-body")) {
     const popupContent = document.getElementById('popup-polaroid-content');
     const popupText = document.getElementById('popup-text-msg');
     const closePopup = document.getElementById('close-memory-popup');
-
+    const memorybody=document.querySelector(".memory-body");
     const bgMusic = document.getElementById("bg-music");
     const musicToggle = document.getElementById("music-toggle-btn");
     const lightsString = document.getElementById("lights-string");
