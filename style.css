@@ -1154,7 +1154,19 @@ body.gifts-body {
   justify-content: center;
   touch-action: none;
 }
+.star {
+    position: fixed;
+    inset: 0;
+    background: url('./gif/Twinkling.gif') center/cover;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+    z-index: 0;
+}
 
+.star.active {
+    opacity: 0.35;
+}
 .memory-wrapper {
   text-align: center;
   width: 100%;
